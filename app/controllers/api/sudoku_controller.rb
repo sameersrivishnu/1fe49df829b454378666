@@ -11,11 +11,11 @@ class Api::SudokuController < ApplicationController
 
   def validation(data,row,col,num)
      for i in 0..9
-	     	if data[row][col] == num
+	     	if data[row][i] == num
 	          return false
 	     	end	
 	     for i in 0..9
-		     	if data[row][col] == num
+		     	if data[i][col] == num
 		          return false
 		     	end	
 	     end
